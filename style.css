@@ -1,12 +1,49 @@
+*{
+    line-height: 1.5;
+}
+.top,
+.section_1,
+.section_2,
+.section_3,
+.section_4{
+    margin: 0 100px;
+}
 #container_1{
     background-color: #1F2937;
 }
-#container_2{
-    background-color: #E5E7EB;
+.top{
+    display: flex;
+    justify-content: space-between;
 }
-body{
-    margin: 0px;
+header img{
+    height: 100px;
+    width: 250px;
+    padding-left: 35px;
 }
+.external_links{
+    margin-right: 70px
+}
+header,
+.external_links{
+    padding-top: 10px;
+}
+.external_links a{
+    padding: 18px;
+}
+.section_1{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+}
+.section_1 h1{
+    margin-bottom: 0;
+}
+.section_1 img{
+    width: 450px;
+    height: 300px;
+    padding: 0 0 50px 50px
+}
+
 
 .head{
     font-size: 48px;
@@ -19,7 +56,7 @@ body{
     text-decoration: none;
 }
 .btn{
-    display: block;
+    display: flex;
     height: 22px;
     width: 160px;
     background-color:#3882F6;
@@ -30,9 +67,34 @@ body{
     border-color: #E5E7EB;
     color:#E5E7EB;
     font-weight: bold;
-    
+    justify-content: center; 
 }
-
+h2{
+    text-align: center;
+    font-size: 35px;
+}
+#container_2 img{
+    height: 250px;
+    width: 250px; 
+}
+.imgs{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+.imgs img{
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #3882F6;
+}
+.detail{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+.detail p{
+    width: 250px;
+}
 .section_2 .center{
     font-size: 36px;
     font-weight: bolder;
@@ -55,22 +117,39 @@ body{
 .section_3 .par{
     color: black;
 }
-.section_4{    
-    display: flex;
+.section_4{  
+        display: flex;
         height: 100px;
-        width: auto;
         background:#3882F6;
-        border-radius: 5px;
         color: #E5E7EB;
-        margin: 40px;
-        padding:20px;
+        justify-content: space-between;
+        border-radius:5px;
+        margin-bottom: 25px;
     }
+h4{
+    font-size: 25px
+}
+h4,
+.section_4 .par{
+    margin:10px 0 0 10px;
+}
+.section_4 a{
+    margin: 35px 100px 0 0;
+}
 .section_5{
     color: #E5E7EB;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    padding: 10px
 }
-.section_4 .right{
-    flex: 1;
+.section_5 p{
+    margin-bottom: 0;
+}
+.section_5 a{
+    text-decoration: none;
+    border-style: solid;
+    border-color: #E5E7EB;
+    color: #E5E7EB;
+    padding: 2px;
+    font-size: 10px;
+
 }
