@@ -1,29 +1,21 @@
 *{
     line-height: 1.5;
 }
-.top,
-.section_1,
-.section_2,
-.section_3,
-.section_4{
-    width: 100%;
-    height: 100%;
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
 }
 #container_1{
     background-color: #1F2937;
 }
 #container_2, #container_1{
-    width: 99%;
     padding: 5px;
+    min-width: 375px;
 }
 .top{
     display: flex;
     justify-content: space-between;
-}
-header img{
-    height: auto;
-    width: 200px;
-    padding-left: 35px;
 }
 .external_links{
     margin-right: 70px
@@ -43,7 +35,7 @@ header,
 }
 .section_1{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -102,7 +94,6 @@ h2{
 .imgs{
     display: flex;
     justify-content: space-between;
-    padding: 0 35px;
 }
 .imgs img{
     border-style: solid;
@@ -112,7 +103,6 @@ h2{
 .detail{
     display: flex;
     justify-content: space-between;
-    padding: 0 35px;
 }
 .detail p{
     width: 250px;
@@ -130,11 +120,11 @@ h2{
     background-color: #E5E7EB;
 }
 .section_3 .quote{
-    font-size: 36px;
+    font-size: 1.5rem;
     font-style: italic;
     font-weight: lighter;
     color: #1F2937;
-    padding: 120px
+    padding: 10%;
 }
 .section_3 .par{
     color: black;
