@@ -9,23 +9,27 @@ body{
 #container_1{
     background-color: #1F2937;
 }
-#container_2, #container_1{
+#container_2, #container_1, .section_3, .section_4, .section_5{
     padding: 5px;
     min-width: 375px;
 }
 .top{
+    width: 100%;
+    height: auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 .external_links{
-    margin-right: 70px
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: .1rem;
 }
 header,
 .external_links{
-    padding-top: 10px;
-}
-.external_links a{
-    padding: 18px;
+    padding-top: 1rem;
 }
 .link:visited{
     color: #586f92;
@@ -52,7 +56,7 @@ header,
     margin-bottom: 0;
 }
 .section_1 img{
-    width: 25%;
+    width: 22%;
     min-width: 150px;
     height: auto;
     border-radius: 5px;
@@ -60,12 +64,12 @@ header,
     border-color: #3882F6;
 }
 .head{
-    font-size: 48px;
+    font-size: 2rem;
     font-weight: bold;
     color: #F9FAF8;
 }
 .top, .par, .link {
-    font-size: 18px;
+    font-size: 1rem;
     color: #E5E7EB;
     text-decoration: none;
 }
@@ -85,11 +89,11 @@ header,
 }
 h2{
     text-align: center;
-    font-size: 35px;
+    font-size: 1.5rem;
 }
 #container_2 img{
     height: auto;
-    min-width: 25%; 
+    min-width: 22%; 
 }
 .imgs{
     display: flex;
@@ -105,21 +109,22 @@ h2{
     justify-content: space-between;
 }
 .detail p{
-    width: 250px;
+    min-width: 22%;
 }
 .section_2 .center{
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: bolder;
     color: #1F2937;
 }
 .section_2 p{
     color:#1F2937;
-    font-size: 18px;
+    font-size: 1rem;
 }
 .section_3{
     background-color: #E5E7EB;
 }
 .section_3 .quote{
+    text-align: center;
     font-size: 1.5rem;
     font-style: italic;
     font-weight: lighter;
@@ -139,7 +144,7 @@ h2{
         margin-bottom: 25px;
     }
 h4{
-    font-size: 25px
+    font-size: 1.5rem
 }
 h4,
 .section_4 .par{
@@ -162,6 +167,6 @@ h4,
     border-color: #E5E7EB;
     color: #E5E7EB;
     padding: 2px;
-    font-size: 10px;
+    font-size: 1rem;
 
 }
