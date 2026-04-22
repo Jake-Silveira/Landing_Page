@@ -30,10 +30,15 @@ body {
     padding: 0 2rem;
 }
 
-/* Header & Navigation */
-#container_1 {
+/* Sections */
+.site-section-dark {
     background-color: var(--primary-bg);
     padding: 1.5rem 0;
+}
+
+.site-section-black {
+    background-color: var(--secondary-bg);
+    padding: 6rem 0;
 }
 
 .top {
@@ -139,9 +144,8 @@ body {
 }
 
 /* Accomplishments */
-#container_2 {
-    background-color: var(--secondary-bg);
-    padding: 6rem 0;
+.accomplishments-container {
+    /* Background and padding are now handled by .site-section-black */
 }
 
 h2.center {
