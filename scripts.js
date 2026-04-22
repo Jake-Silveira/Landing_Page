@@ -1,20 +1,28 @@
-function handleScrollFade() {
-  const elements = document.querySelectorAll('#fadeInSection');
+/**
+ * Handle scroll animations using Intersection Observer
+ * This is more performant than listening to the scroll event directly.
+ */
+function initScrollAnimations() {
+  const observerOptions = {
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
+  };
 
-  elements.forEach(el => {
-    const rect = el.getBoundingClientRect();
-    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        // Once the element is visible, we can stop observing it
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
 
-    // Determine how far into the viewport the element is
-    const visibleRatio = Math.min(Math.max((windowHeight - rect.top) / windowHeight, 0), 1);
-
-    // Apply opacity and scale based on ratio
-    el.style.opacity = visibleRatio;
-    el.style.transform = `scale(${0.95 + visibleRatio * 0.05})`;
-  });
+  const fadeElements = document.querySelectorAll('.fade-in-section');
+  fadeElements.forEach(el => observer.observe(el));
 }
 
-// Run on scroll
-window.addEventListener('scroll', handleScrollFade);
-// Run once on load
-window.addEventListener('load', handleScrollFade);
+// Initialize on DOM content loaded
+document.addEventListener('DOMContentLoaded', () => {
+  initScrollAnimations();
+});

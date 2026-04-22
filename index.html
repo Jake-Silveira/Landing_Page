@@ -1,77 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head> <meta charset="utpf-8">
+    <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> My Landing Page</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="scripts.js" defer></script>
-</head>
+        <title>Jake Silveira | Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="scripts.js" defer></script>
+    </head>
 
     <body>
-        <a id="beginning"></a> <!-- Anchor for the top of the page -->
-    <div id="container_1">
-        <div class="top">
-            <header> <img src="./images/logo.svg" class="logo"></a></header>
-            <div class="external_links">
-                <a href="https://github.com/Jake-Silveira"class="link" target="_blank"> Github</a>
-                <a href="https://docs.google.com/document/d/1lywL-mNqu4uK-L4kuxLtuxNEeVC0wyMpzH6M3HlI_bI/edit?usp=sharing" class="link" target="_blank">Resume</a>
-                <a href="https://www.loom.com/share/0a6a3bc03c6949488991ee4812dc8dcd" class="link" target="_blank">Latest Project</a>
+        <a id="beginning"></a>
+        <header id="container_1">
+            <div class="top max-width">
+                <div class="logo-container">
+                    <img src="./images/logo.svg" class="logo" alt="Logo">
+                </div>
+                <nav class="external_links">
+                    <a href="https://github.com/Jake-Silveira" class="link" target="_blank">Github</a>
+                    <a href="https://docs.google.com/document/d/1lywL-mNqu4uK-L4kuxLtuxNEeVC0wyMpzH6M3HlI_bI/edit?usp=sharing" class="link" target="_blank">Resume</a>
+                    <a href="https://www.loom.com/share/0a6a3bc03c6949488991ee4812dc8dcd" class="link" target="_blank">Latest Project</a>
+                </nav>
             </div>
-        </div>
-        <div class="section_1">
-            <div class="left">
-            <h1 class="left head"> Welcome to My Landing Page!</h1>
-                <p class="left par">To contact me, click the button below to visit my LinkedIn</p>
-                <a href="https://www.linkedin.com/in/jacob-silveira-440973216" class="left btn" target="_blank">LinkedIn</a></div>
-                <img src="./images/headshot.jpeg" class="right">
+            <section class="section_1 max-width">
+                <div class="left">
+                    <h1 class="head">Welcome to my professional portfolio</h1>
+                    <p class="par">Building innovative solutions through additive manufacturing, automation, and web development.</p>
+                    <a href="https://www.linkedin.com/in/jacob-silveira-440973216" class="btn btn-primary" target="_blank">Connect on LinkedIn</a>
+                </div>
+                <div class="right">
+                    <img src="./images/headshot.jpeg" alt="Jake Silveira Headshot">
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="fade-in-section" id="accomplishments">
+                <div id="container_2">
+                    <div class="max-width">
+                        <h2 class="center">Professional Accomplishments</h2>
+                        <div class="section_2">
+                            <div class="accomplishment">
+                                <div class="img-container">
+                                    <img src="./images/AdditiveManufacturing.png" alt="Additive Manufacturing">
+                                </div>
+                                <p>Industrial 3D printing utilizing laser powder bed fusion technology.</p>
+                            </div>
+                            <div class="accomplishment">
+                                <div class="img-container">
+                                    <img src="./images/Manufacturing.png" alt="Manufacturing">
+                                </div>
+                                <p>Hands-on work in general manufacturing, automation, and production processes.</p>
+                            </div>
+                            <div class="accomplishment">
+                                <div class="img-container">
+                                    <img src="./images/WebDevLangs.png" alt="Web Development">
+                                </div>
+                                <p>Frontend development building interactive web applications.</p>
+                            </div>
+                            <div class="accomplishment">
+                                <div class="img-container">
+                                    <img src="./images/SysDev.png" alt="Systems Development">
+                                </div>
+                                <p>Custom inventory and management systems with data analysis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fade-in-section section_3">
+                <div class="max-width">
+                    <blockquote class="quote">
+                        "Born in 1999, I’ve witnessed firsthand the rapid evolution of technology. This exposure fueled a passion for learning and a clear ambition to contribute meaningfully to a leading development team."
+                        <cite>— Jake Silveira</cite>
+                    </blockquote>
+                </div>
+            </section>
+
+            <section class="section_4 max-width">
+                <h4>Interested in working together?</h4>
+                <a href="https://www.linkedin.com/in/jacob-silveira-440973216" class="btn btn-secondary">Get in touch</a>
+            </section>
+        </main>
+
+        <footer id="container_1">
+            <div class="section_5 max-width">
+                <p>Thank you for your time! Feel free to reach out with any questions.</p>
+                <a href="#beginning" class="back-to-top">Back to top ↑</a>
             </div>
-    </div>
-<div id="fadeInSection">    
-<div id="container_2">
-    <h2 class="center">My Accomplishments:</h2>
-    <div class="section_2">
-
-        <div class="accomplishment">
-            <img src="./images/AdditiveManufacturing.png" class="img">
-            <p>Experience working with industrial 3D printing utilizing laser powder bed fusion technology.</p>
-        </div>
-
-        <div class="accomplishment">
-            <img src="./images/Manufacturing.png" class="img">
-            <p>Hands-on work in general manufacturing environments with automation and production processes.</p>
-        </div>
-
-        <div class="accomplishment">
-            <img src="./images/WebDevLangs.png" class="img">
-            <p>Skilled in frontend development using HTML, CSS, and JavaScript to build interactive web applications.</p>
-        </div>
-
-        <div class="accomplishment">
-            <img src="./images/SysDev.png" class="img">
-            <p>Built custom inventory and management systems integrating automation and data analysis.</p>
-        </div>
-
-    </div>
-</div>
-</div>
-
-        <div id="fadeInSection" class="section_3">
-            <h3 class="center quote">Born in 1999, I’ve witnessed firsthand the rapid evolution of technology over the past two and a half decades. This exposure has fueled a strong passion for learning and a clear ambition to contribute meaningfully as part of a leading development team. Backed by a supportive community, I’m driven to turn ideas into reality and continually push the boundaries of what I can achieve.
-                <p class="par">-Jake Silveira</p>
-            </h3>
-        </div>
-
-
-        <div class="section_4">
-                <h4>Contact me on my LinkedIn!</h4>
-                <a href="https://www.linkedin.com/in/jacob-silveira-440973216" class="btn">LinkedIn</a>       
-        </div>
-        <div id="container_1">
-            <div class="section_5">
-                <p>Thank you for your time! <br>If you have any questions, feel free to reach out!</p>
-                <a href="#beginning">Back to top</a>
-            </div>
-        </div>
+        </footer>
     </body>
 </html>
